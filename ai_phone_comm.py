@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-SIM7600 4G Dongle Controller
-=========================
+AI電話通訊程式 (AI Phone Communication)
+=====================================
 呢個程式可以控制 SIM7600 4G Dongle 打出同接收電話
 
 功能：
@@ -199,7 +199,7 @@ class SIM7600Controller:
 def main():
     import argparse
     
-    parser = argparse.ArgumentParser(description='SIM7600 4G Dongle Controller')
+    parser = argparse.ArgumentParser(description='AI電話通訊程式 - SIM7600 4G Dongle 控制')
     parser.add_argument('--port', default='/dev/ttyUSB0', help='Serial port (default: /dev/ttyUSB0)')
     parser.add_argument('--make-call', '-m', help='打出電話號碼')
     parser.add_argument('--answer', '-a', action='store_true', help='接聽電話')
